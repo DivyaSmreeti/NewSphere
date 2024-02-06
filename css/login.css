@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+*{
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+}
+
+.login-page{
+    /* background-color: #f19ab2; */
+    align-items: center;
+    display: flex;
+    /* height: calc(100vh - 77px); */
+    width: 100%;
+}
+.main-column1{
+    background: #fff;
+}
+.login-row , .main-column2{
+    align-items: center;
+}
+.login-title{
+    font-size: 36px;
+    margin-bottom: 36px;
+    letter-spacing: 0.7px;
+    font-weight: 600;
+    text-align: center;
+}
+.form-group , .form-label{
+    font-size: 14.741px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-left: 4px;
+}
+.form-group .form-control{
+    border-radius: 8px;
+    /* width: 80%; */
+    padding: 10px;
+}
+.d-grid{
+    display: grid;
+}
+.login-btn{
+    border-radius: 8px;
+    color: #fff!important;
+    padding: 12px 40px;
+    background: linear-gradient(90deg,#000000,#737373);
+    outline: none;
+    border: none;
+    text-decoration: none !important;
+}
+.login-btn:hover {
+    /* moz-transition: all 1s ease-in-out!important; */
+    background-image: linear-gradient(89.25deg,#000000,#737373,#000000,#737373)!important;
+    background-position: 100% 0!important;
+    background-size: 300% 100%!important;
+    box-shadow: 0 4px 15px 0 #828080!important;
+    color: #fff;
+    cursor: pointer!important;
+    text-decoration: none;
+    transition: all 1s ease-in-out!important;
+}
+.signup-content p{
+    font-size: 20px;
+
+}
+.signup-content p a{
+    color: #000000;
+    text-decoration: none;
+
+}
+.signup-content p a:hover{
+    color: #6b0487;
+    text-decoration: none;
+}
+.login-form-wrapper{
+    padding: 80px;
+}
+.main-column2{
+    background-color: #f19ab2;
+}
+.main-col2-wrapper{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+.login-page-image{
+    height: 350px;
+    width: 550px;
+}
