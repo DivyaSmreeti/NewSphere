@@ -2,7 +2,7 @@
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
     background: #fafafa;
 }
 
@@ -48,7 +48,7 @@ a:focus {
     SIDEBAR STYLE
 ----------------------------------------------------- */
 
-.wrapper {
+.wrapper1 {
     display: flex;
     width: 100%;
     align-items: stretch;
@@ -178,4 +178,56 @@ a.article:hover {
         width: 100%;
         margin-left: 0;
     }
+}
+
+
+/* STUDENT PROFILE PAGE CSS */
+
+.profile-row1{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-card{
+    height: 60vh;
+    width: 60%;
+    background-color:#9fade8;
+    border-radius: 10px;
+}
+
+.r1{
+    justify-content: center;
+}
+.card-data{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.data {
+    color: black;
+    font-size: 20px;
+}
+.text-bold{
+    /* margin-right: 20px; */
+    font-weight: 500;
+}
+
+.wrap-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data-wrap{
+    display: flex;
+    gap: 20px;
+}
+
+.d-block{
+    display: block !important;
+}
+.d-none{
+    display: none !important;
 }
