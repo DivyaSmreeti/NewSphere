@@ -231,3 +231,111 @@ a.article:hover {
 .d-none{
     display: none !important;
 }
+
+
+
+/* new css march 6 */
+
+.heading-drive{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    width: 100%;
+    padding: 3%;
+    font-size: 24px;
+}
+.heading-drive button{
+    font-size: 17px !important;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color:#7386D5;
+    color: #fff;
+    padding: 1%;
+    cursor: pointer;
+}
+
+
+
+  /* CCS  MARCH 10  */
+
+  @media (min-width: 576px)
+  {
+  .modal-dialog {
+    max-width: 900px;
+    margin: 1.75rem auto;
+  }
+  }
+  .modal-content{
+    background-color: transparent !important;
+    border: none !important;
+  }
+
+  /* CSS FOR DRIVE PAGE CARDS */
+
+ 
+
+.card {
+    border: none;
+    border-radius: 10px;
+    background-color: #E1F2F7;
+    /* background-color: #FFFFFF; */
+}
+
+.c-details span {
+    font-weight: 300;
+    font-size: 13px
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 39px
+}
+
+.badge span {
+    /* background-color: #fffbec; */
+    width: 60px;
+    height: 25px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    display: flex;
+    /* color: #fed85d; */
+    /* color: #EE7879;
+    color: #CAE7DF; */
+    justify-content: center;
+    align-items: center
+}
+.badge1{
+  background-color:  #CAE7DF;
+  color: #2f7d67;
+}
+.badge2{
+  background-color: #ffeeb4;
+  color: #ffd13a; 
+}
+.badge3{
+  background-color: #EE7879;
+  color: #78191b; 
+}
+
+
+
+
+.text1 {
+    font-size: 14px;
+    font-weight: 600
+}
+
+.text2 {
+    color: #a5aec0
+}
+
+
+  
+  

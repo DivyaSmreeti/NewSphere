@@ -57,6 +57,9 @@
             <a href="#" id="details">Student Details</a>
           </li>
           <li>
+            <a href="#" id="drives">Placement Drives</a>
+          </li>
+          <li>
             <a
               href="#pageSubmenu"
               data-toggle="collapse"
@@ -268,8 +271,123 @@
         </div>
       </div>
         <!-- PAGE 2 CONTENT  -->
-        
 
+        <!-- PAGE 3 CONTENT STARTS -->
+        <div class="drive-page" >
+          <div id="page3Content" style="display: none;" >
+          <div class="heading-drive">
+            <div>Placement Drives Info</div>
+            <button id="addDriveBtn" class="btn-success">Add Drive</button>
+          </div>
+
+            <!-- CARDS FOR THE PAGE STARTS -->
+            <div class="container mt-5 mb-3">
+              <div class="row">
+                  <div class="col-md-12 mb-5">
+
+                      <div class="card p-3 mb-2">
+                          <div class="d-flex justify-content-between">
+                              <div class="d-flex flex-row align-items-center">
+                                  <!-- <div class="icon"> <i class="bx bxl-mailchimp"></i> </div> -->
+                                  <div class="ms-2 c-details">
+                                      <h6 class="mb-0">Mailchimp</h6> <span>1 days ago</span>
+                                  </div>
+                              </div>
+                              <div class="badge"> <span class="badge1">Active</span> </div>
+                          </div>
+                          <div class="mt-5">
+                              <h3 class="heading">Senior Product<br>Designer-Singapore</h3>
+                              <!-- <div class="mt-5">
+                                  <div class="progress">
+                                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                  <div class="mt-3"> <span class="text1">32 Applied <span class="text2">of 50 capacity</span></span> </div>
+                              </div> -->
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-12 mb-5">
+                      <div class="card p-3 mb-2">
+                          <div class="d-flex justify-content-between">
+                              <div class="d-flex flex-row align-items-center">
+                                  <!-- <div class="icon"> <i class="bx bxl-dribbble"></i> </div> -->
+                                  <div class="ms-2 c-details">
+                                      <h6 class="mb-0">Dribbble</h6> <span>4 days ago</span>
+                                  </div>
+                              </div>
+                              <div class="badge"> <span class="badge2">Design</span> </div>
+                          </div>
+                          <div class="mt-5">
+                              <h3 class="heading">Junior Product<br>Designer-Singapore</h3>
+                              <!-- <div class="mt-5">
+                                  <div class="progress">
+                                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                  <div class="mt-3"> <span class="text1">42 Applied <span class="text2">of 70 capacity</span></span> </div>
+                              </div> -->
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-12 mb-5">
+                      <div class="card p-3 mb-2">
+                          <div class="d-flex justify-content-between">
+                              <div class="d-flex flex-row align-items-center">
+                                  <!-- <div class="icon"> <i class="bx bxl-reddit"></i> </div> -->
+                                  <div class="ms-2 c-details">
+                                      <h6 class="mb-0">Reddit</h6> <span>2 days ago</span>
+                                  </div>
+                              </div>
+                              <div class="badge"> <span class="badge3">Visited</span> </div>
+                          </div>
+                          <div class="mt-5">
+                              <h3 class="heading">Software Architect <br>Java - USA</h3>
+                              <!-- <div class="mt-5">
+                                  <div class="progress">
+                                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                  <div class="mt-3"> <span class="text1">52 Applied <span class="text2">of 100 capacity</span></span> </div>
+                              </div> -->
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+            <!-- CARD ENDS  -->
+          
+          </div>
+        </div>
+
+
+        <!-- CARD TO DISPLAY IN THE PAGE  -->
+        <div id="driveCard" class="card" style="display: none;">
+          <div class="card-body">
+            <h5 class="card-title">Drive Information</h5>
+            <p id="companyName"></p>
+            <p id="driveDescription"></p>
+            <p id="eligibleBranches"></p>
+            <p id="domain"></p>
+            <p id="date"></p>
+            <p id="time"></p>
+            <p id="lastDate"></p>
+            <p id="venue"></p>
+          </div>
+        </div>
+
+
+        <!-- PAGE 3 CONTENT ENDS -->
+
+        <!-- 
+          company name
+          company location
+          job description
+          eligibility
+          skills
+          min stipend
+          max stipend
+          date
+          venue
+          last date
+         -->
       </div>
     </div>
 
