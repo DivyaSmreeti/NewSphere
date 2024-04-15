@@ -57,6 +57,8 @@ a:focus {
 #sidebar {
     width: 250px;
     background: #7386D5;
+    background: #0F2557;
+    /* background: #e8dff5; */
     color: #fff;
     transition: all 0.3s;
     position: fixed;
@@ -71,6 +73,7 @@ a:focus {
 #sidebar .sidebar-header {
     padding: 20px;
     background: #6d7fcc;
+    background: #0F2557;
 }
 
 #sidebar ul.components {
@@ -90,14 +93,16 @@ a:focus {
 }
 
 #sidebar ul li a:hover {
-    color: #7386D5;
+    color:  #0F2557;
+    /* color: #7386D5; */
     background: #fff;
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    color: #fff;
-    background: #6d7fcc;
+    /* color: #fff; */
+    /* background: #6d7fcc; */
+    background: #0F2557 !important;
 }
 
 a[data-toggle="collapse"] {
@@ -116,6 +121,7 @@ ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
     background: #6d7fcc;
+    background: #0F2557;
 }
 
 ul.CTAs {
@@ -142,10 +148,11 @@ ul.CTAs a {
     border: none;
 }
 
-a.article,
-a.article:hover {
-    background: #6d7fcc !important;
-    color: #fff !important;
+a.article
+ {
+    /* background: #6d7fcc !important; */
+    background: #fff;
+    color: #0F2557 !important;
 }
 
 /* ---------------------------------------------------
@@ -194,6 +201,9 @@ a.article:hover {
     height: 60vh;
     width: 60%;
     background-color:#9fade8;
+    background-color: #b3dee2;
+    background-color:  #daeaf6;
+    background-color: #e8dff5;
     border-radius: 10px;
 }
 
@@ -338,4 +348,267 @@ a.article:hover {
 
 
   
+  /* DASHBOARD CSS STARTS */
+  @import url("https://fonts.googleapis.com/css?family=Satisfy|Zilla+Slab");
+  /* body {
+    background: #643a7a;
+  } */
   
+  .frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.6);
+    background: #201c29;
+    font-family: "Zilla Slab", serif;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .card-db {
+    position: absolute;
+    top: 90px;
+    left: 60px;
+    height: 220px;
+    width: 280px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+  }
+  .card-db .header {
+    position: relative;
+    height: 60px;
+    width: 100%;
+    background: #643a7a;
+    color: #fff;
+  }
+  .card-db .header .big {
+    position: absolute;
+    font-family: Satisfy, fantasy;
+    font-size: 1.5rem;
+  }
+  .card-db .header .small {
+    position: absolute;
+    font-size: 1rem;
+  }
+  .card-db .header .title {
+    top: 12px;
+    left: 15px;
+  }
+  .card-db .header .date {
+    top: 2.5rem;
+    left: 15px;
+  }
+  .card-db .header .type {
+    top: 14px;
+    right: 15px;
+  }
+  .card-db .header .value {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 2rem;
+    right: 15px;
+  }
+  .card-db .parameter {
+    text-align: right;
+    padding: 10px 0 14px 0;
+  }
+  .card-db .parameter span {
+    position: relative;
+    font-size: 0.85rem;
+    color: #606060;
+    line-height: 13px;
+    padding: 0 10px 0 25px;
+  }
+  .card-db .parameter span:before {
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    display: block;
+    content: "";
+    width: 11px;
+    height: 4px;
+    border-radius: 3px;
+  }
+  .card-db .parameter .red:before {
+    background: #643a7a;
+  }
+  .card-db .parameter .blue:before {
+    background: #547496;
+  }
+  .card-db .statistic {
+    position: relative;
+    height: 81px;
+    width: 260px;
+    margin: 0 auto;
+  }
+  .card-db .statistic .line-1, .card-db .statistic .line-3, .card-db .statistic .line-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: rgba(255, 192, 203, 0.3);
+  }
+  .card-db .statistic .line-2 {
+    top: 40px;
+  }
+  .card-db .statistic .line-3 {
+    top: inherit;
+    bottom: 0;
+  }
+  .card-db .statistic .data svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    -webkit-animation: 4s dash 0.5s linear forwards;
+            animation: 4s dash 0.5s linear forwards;
+  }
+  @-webkit-keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  .card-db .statistic .data polyline {
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+  }
+  .card-db .statistic .data.red polyline {
+    stroke: #643a7a;
+  }
+  .card-db .statistic .data.blue polyline {
+    stroke: #547496;
+  }
+  .card-db .statistic .data .tooltip {
+    position: absolute;
+    bottom: 13px;
+    left: 50%;
+    transform: translate3d(-50%, 10px, 0);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 11px;
+    color: #fff;
+    padding: 8px 6px;
+    border-radius: 3px;
+    visibility: hidden;
+    opacity: 0;
+    transition: transform 0.4s ease-out 0s, opacity 0.4s ease-out 0s;
+  }
+  .card-db .statistic .data .tooltip:after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 6px;
+    width: 6px;
+    left: 50%;
+    margin-left: -3px;
+    bottom: -3px;
+    transform: rotate(45deg);
+  }
+  .card-db .statistic .data [class^=point-] {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .card-db .statistic .data [class^=point-]:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: translate3d(-50%, 0, 0);
+  }
+  .card-db .statistic .data.red [class^=point-], .card-db .statistic .data.red .tooltip, .card-db .statistic .data.red .tooltip:after {
+    background: #643a7a;
+  }
+  .card-db .statistic .data.red .point-1 {
+    left: 7px;
+    top: 43px;
+  }
+  .card-db .statistic .data.red .point-2 {
+    left: 48px;
+    top: 9px;
+  }
+  .card-db .statistic .data.red .point-3 {
+    left: 88px;
+    top: 20px;
+  }
+  .card-db .statistic .data.red .point-4 {
+    left: 128px;
+    top: 8px;
+  }
+  .card-db .statistic .data.red .point-5 {
+    left: 169px;
+    top: 35px;
+  }
+  .card-db .statistic .data.red .point-6 {
+    left: 209px;
+    top: 45px;
+  }
+  .card-db .statistic .data.red .point-7 {
+    left: 249px;
+    top: 16px;
+  }
+  .card-db .statistic .data.blue [class^=point-], .card-db .statistic .data.blue .tooltip, .card-db .statistic .data.blue .tooltip:after {
+    background: #547496;
+  }
+  .card-db .statistic .data.blue .point-1 {
+    left: 7px;
+    top: 58px;
+  }
+  .card-db .statistic .data.blue .point-2 {
+    left: 48px;
+    top: 47px;
+  }
+  .card-db .statistic .data.blue .point-3 {
+    left: 88px;
+    top: 62px;
+  }
+  .card-db .statistic .data.blue .point-4 {
+    left: 128px;
+    top: 52px;
+  }
+  .card-db .statistic .data.blue .point-5 {
+    left: 169px;
+    top: 58px;
+  }
+  .card-db .statistic .data.blue .point-6 {
+    left: 209px;
+    top: 71px;
+  }
+  .card-db .statistic .data.blue .point-7 {
+    left: 249px;
+    top: 61px;
+  }
+  .card-db .days {
+    width: 280px;
+    margin: 0 auto;
+  }
+  .card-db .days .day {
+    display: block;
+    float: left;
+    width: 14.2857142857%;
+    font-size: 9px;
+    color: #949494;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  /* DASHBOARD CSS ENDS */
