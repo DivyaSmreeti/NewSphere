@@ -25,17 +25,28 @@ function showpage1()
     document.getElementById("page1Content").style.display="block";
     document.getElementById("page2Content").style.display="none";
     document.getElementById("page3Content").style.display="none";
+    document.getElementById("frame").style.display="none";
 }
 function showpage2()
 {
     document.getElementById("page1Content").style.display="none";
     document.getElementById("page2Content").style.display="block";
     document.getElementById("page3Content").style.display="none";
+    document.getElementById("frame").style.display="none";
     
 }
 function showpage3()
 {
     document.getElementById("page3Content").style.display="block";
+    document.getElementById("page1Content").style.display="none";
+    document.getElementById("page2Content").style.display="none";
+    document.getElementById("frame").style.display="none";
+}
+
+function showdb()
+{
+    document.getElementById("frame").style.display="block";
+    document.getElementById("page3Content").style.display="none";
     document.getElementById("page1Content").style.display="none";
     document.getElementById("page2Content").style.display="none";
 }
@@ -50,6 +61,9 @@ document.querySelector('#calendar').addEventListener('click', function () {
 });
 document.querySelector('#drives').addEventListener('click', function () {
     showpage3();
+});
+document.querySelector('#db').addEventListener('click', function () {
+    showdb();
 });
 
 

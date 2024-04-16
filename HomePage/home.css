@@ -355,24 +355,13 @@ a.article
   } */
   
   .frame {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    height: 400px;
-    margin-top: -200px;
-    margin-left: -200px;
-    border-radius: 2px;
-    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.6);
-    background: #201c29;
-    font-family: "Zilla Slab", serif;
-    color: #fff;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    
+    
   }
   
   .card-db {
-    position: absolute;
+    position: relative;
     top: 90px;
     left: 60px;
     height: 220px;
@@ -391,7 +380,7 @@ a.article
   }
   .card-db .header .big {
     position: absolute;
-    font-family: Satisfy, fantasy;
+    font-family: Satisfy, fantasy !important;
     font-size: 1.5rem;
   }
   .card-db .header .small {
